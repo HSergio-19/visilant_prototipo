@@ -21,7 +21,7 @@
         <h4>MAnten el orden de tus visitas y visualiza su control en tiempo real</h4>
     </div>
           
-    <form class = "form-registro" action="registro_db.php" method="POST">
+    <form class = "form-registro" action="database/sesion_db.php" method="POST">
             <p> <b>CORREO</b></p>
             <input type="email" class = "campo" placeholder="CORREO ELECTRONICO" name="correo"> <br>
             <p><b>CONTRASEÑA</b></p>

@@ -21,7 +21,7 @@
         <h4>Prueba las herramientas que ofrecemos para gestionar y controlar las visitas en tu urbanizacion.</h4>
     </div>
           
-    <form class = "form-registro" action="registro_db.php" method="POST">
+    <form class = "form-registro" action="database/registro_db.php" method="POST">
             <p> <b>CORREO</b></p>
             <input type="email" class = "campo" placeholder="CORREO ELECTRONICO" name="correo"> <br>
             <p><b>CONTRASEÑA</b></p>
