@@ -4,26 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
-    <link rel="website icon" type="png" href="../img/icon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="website icon" type="png" href="img/icon.png">
     <title>Visilant - Registro</title>
 </head>
 <body>
 
-    <!--HEADER DE LA PAGINA-->
-    <header>
-            <a href = "../index.php" class="logo">
-                <img src="../img/icon.png" alt="logo.png">
-                <h2 class="nombre-sistema">VISILANT</h2>
-            </a>
-
-            <nav>
-                <a href="inicio_sesion.php">Iniciar Sesion</a>
-                <a href="registro.php">Registrate</a>
-                <a href="#">Ayuda</a>              
-                <a href="#">Contacto</a>
-            </nav>
-    </header>
+   <?php require "header.php"?>
 
 
 

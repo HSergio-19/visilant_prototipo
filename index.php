@@ -11,35 +11,23 @@
 
 <body>
     
-    <!--HEADER DE LA PAGINA-->
-    <header>
-        <a href = "index.php" class="logo">
-            <img src="img/icon.png" alt="logo.png">
-            <h2 class="nombre-sistema">VISILANT</h2>
-        </a>
-
-        <nav>
-            <a href="database/inicio_sesion.php">Iniciar Sesion</a>
-            <a href="database/registro.php">Registrate</a>
-            <a href="#">Ayuda</a>              
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
+    <?php require "header.php" ?>
 
 
 <!--ENCABEZADO DE LA PAGINA (CONTIENE EL LOGO, NOMBRE Y MENU DE NAVEGACION)--> 
       
     <div class = "index-titulo" >
         <h1>CONTROL Y GESTION DE <br> VISITAS EN URBANIZACIONES</h1>
-        <p>Monitoreo en tiempo real sobre las visitas en tu urbanizacion, <br> manteniendo el control y seguridad.</p>
+        <p>Monitoreo en tiempo real sobre las visitas de tu urbanizacion, <br> manteniendo el control y seguridad.</p>
     </div>
     
     <br>
 
-     <section>
+        <div class= info-pagina>
+
+        </div>
         <div></div>
-        <div></div>
-     </section>
+  
 
  
         
