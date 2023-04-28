@@ -1,8 +1,11 @@
 <?php
-
+//SEGURIDAD DE PAGINACION DE INICIO DE SESION
 session_start();
+error_reporting(:);
+$validar_sesion = $_SESSION['correo'];
 
-if(!isset($_SESSION['correo'])){
+
+if($validar_sesion==null || $validar_sesion==''){
 	echo '
 		<script>
 			alert("POR FAVOR DEBES INICIAR SESION");

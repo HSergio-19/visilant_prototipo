@@ -3,10 +3,10 @@ require "conexion.php";
 
 
 if (!empty($_POST['boton-registro'])) {
-    if (empty($_POST['correo']) && empty($_POST['contrasena'])) {
+    if (empty($_POST['correo']) or empty($_POST['contrasena'])) {
        echo'<script>
        alert("LLENE LOS CAMPOS DE MANERA CORRECTA");
-       window.location="registro.php";
+       window.location="../registro.php";
    </script>';
     } else {
         
@@ -27,7 +27,7 @@ $verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_user WHERE c
     if(mysqli_num_rows($verificar_correo) > 0){
         echo '<script>
             alert("ESTE NOMBRE DE USUARIO YA ESTA EN USO, UTILICE UNO DIFERENTE");
-            window.location="registro.php";
+            window.location="../registro.php";
         </script>';
         exit();
     }          

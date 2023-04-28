@@ -25,7 +25,8 @@
             <p> <b>CORREO</b></p>
             <input type="email" class = "campo" placeholder="CORREO ELECTRONICO" name="correo"> <br>
             <p><b>CONTRASEÑA</b></p>
-            <input type="password" class = "campo" placeholder="CONTRASEÑA" name="contrasena"> <br>
+            <input type="password" id = "input" class = "campo" placeholder="CONTRASEÑA" name="contrasena"> <br>
+            <img src="img/show.png" alt="js/code.js" id = "eye">
             
             <input type="submit" name = "boton-sesion"  class = "boton" value="INICIAR SESION">
     </form>
