@@ -1,5 +1,5 @@
 <?php
 
-	$conexion = mysqli_connect("localhost", "root", "", "crud_php");
+	$conexion = mysqli_connect("localhost", "root", "", "visilant_db");
 
 ?>

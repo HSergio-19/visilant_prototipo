@@ -11,14 +11,23 @@ $consulta = "SELECT * FROM visilant_user WHERE correo = '$correo' and contrasena
 $resultado = mysqli_query($conexion, $consulta);
 
 
-$filas = mysqli_num_rows($resultado);
-if ($filas) {
+$filas = mysqli_fetch_array($resultado);
+
+if ($filas ['id_cargo'] == 2) {
+
     header("location:../home/home.php");
+
+} else if ($filas ['id_cargo']==1) {
+
+    header("location:../admin/index.php");
+
 } else {
+
     echo'<script>
-    alert("LOS DATOS INGRESADOS SON INCORRECTOS O ESTE USUARIO NO SE ENCUENTRA REGISTRADO, LE INVITAMOS A FORMAR PARTE DE NUESTRA COMUNIDAD PRIMERO ANTES DE INGRESAR");
+    alert("INGRESE LOS DATOS CORRECTOS POR FAVOR");
     window.location="../index.php";
 </script>';
+
 }
 
 

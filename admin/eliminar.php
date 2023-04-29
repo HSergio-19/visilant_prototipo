@@ -3,7 +3,7 @@
 
     $id = $_GET['id'];
 
-    $sql = "DELETE FROM lista_alumnos WHERE id='$id'";
+    $sql = "DELETE FROM visilant_user WHERE id='$id'";
 
     $query = mysqli_query($conexion, $sql);
 

@@ -1,7 +1,6 @@
 <?php
 require "conexion.php";
 
-
 if (!empty($_POST['boton-registro'])) {
     if (empty($_POST['correo']) or empty($_POST['contrasena'])) {
        echo'<script>
@@ -12,9 +11,10 @@ if (!empty($_POST['boton-registro'])) {
         
         $correo = $_POST["correo"];
         $contrasena = $_POST["contrasena"];
+        $id_cargo = 2;
         
-        $query = "INSERT INTO visilant_user(correo, contrasena)
-                  VALUES('$correo', '$contrasena')"; 
+        $query = "INSERT INTO visilant_user(correo, contrasena, id_cargo)
+                  VALUES('$correo', '$contrasena', '$id_cargo')"; 
     };
 
 };

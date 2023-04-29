@@ -1,7 +1,7 @@
 <?php
 //SEGURIDAD DE PAGINACION DE INICIO DE SESION
 session_start();
-error_reporting(:);
+error_reporting();
 $validar_sesion = $_SESSION['correo'];
 
 
