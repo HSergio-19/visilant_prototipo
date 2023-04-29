@@ -15,7 +15,7 @@ $filas = mysqli_fetch_array($resultado);
 
 if ($filas ['id_cargo'] == 2) {
 
-    header("location:../home/home.php");
+    header("location:../usuario/home.php");
 
 } else if ($filas ['id_cargo']==1) {
 

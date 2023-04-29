@@ -33,6 +33,7 @@ $query = mysqli_query($conexion, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/admin.css">
+    <link rel="website icon" type="png" href="../img/icon.png">
     <title>Visilant - Admin</title>
 </head>
 <body>

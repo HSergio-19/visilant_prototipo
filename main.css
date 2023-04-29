@@ -1,0 +1,165 @@
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+
+/*ENCABEZADO DE LA PAGINA*/
+
+header {
+    background-color:#3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+header h2 {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 80px;
+    margin-left: 60px;
+}
+
+nav a {
+    font-size: 20px;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #8adcff;
+    font-size: 22px;
+    transition: all 300ms ease;
+}
+
+div {
+    margin: 50px;
+} 
+
+.index-titulo{
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #3a3a3a;
+    color: white;
+    height: 300px;
+}
+
+.index-titulo p{
+    font-size: 25px;
+}
+
+/*FORMULARIOS REGISTRO E INICIO DE SESION*/
+
+.titulo-descripcion {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #3a3a3a;
+    text-align: center;
+    color: white;
+}
+
+
+.form-registro{
+    background-color: #3a3a3a;
+    margin: 0 auto;
+    padding: 10px;
+    width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    height: 300px;
+
+}
+
+.campo {
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+}
+
+.form-registro .boton {
+    width: 200px;
+    border: none;
+    padding: 20px;
+    font-size: 20;
+    border-radius: 10px;
+    background-color:  #3a3a3a; 
+    color: white;
+    border: 1px solid #8adcff;
+} 
+
+.form-registro .boton:hover {
+    background-color: #8adcff; 
+    color: #3a3a3a;
+    font-size: 20px;
+    transition: all 300ms ease;
+} 
+
+.form-registro p{
+    background-color: #3a3a3a;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+/*INFORMACION DE PAGINA*/
+
+.info-pagina {
+    background-color: #e3e9ee;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-pagina-text p{
+
+    font-size: 20px;
+
+}
+
+.info-pagina-img img{
+    width: 200px;
+    height: 200px;
+    margin-right: 60px;
+    
+}
+
+/*PIE DE PAGINA*/
+
+footer {
+    background-color: #3a3a3a;
+    margin: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 10px;
+}
+
+footer img{
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}

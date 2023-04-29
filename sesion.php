@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/registro_sesion.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="website icon" type="png" href="img/icon.png">
     <title>Visilant - Iniciar Sesion</title>
 </head>
 <body>
 
    <?php require "header.php"?>
-
-
 
     <!--FORMULARIO DE REGISTRO -->
 

@@ -29,6 +29,7 @@ if($validar_sesion==null || $validar_sesion==''){
 </head>
 <body>
     <h1>CONEXION DE INICIO DE SESION EXITOSA</h1>
+	<h1>SISTEMA EN CONSTRUCCION</h1>
 
     <a href="cerrar_sesion.php">CERRAR SESION</a>
 </body>

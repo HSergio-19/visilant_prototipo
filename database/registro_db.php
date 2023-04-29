@@ -15,6 +15,7 @@ if (!empty($_POST['boton-registro'])) {
         
         $query = "INSERT INTO visilant_user(correo, contrasena, id_cargo)
                   VALUES('$correo', '$contrasena', '$id_cargo')"; 
+        $id_increment = "ALTER TABLE visilant_user AUTO_INCREMENT=1;";
     };
 
 };
@@ -24,6 +25,7 @@ if (!empty($_POST['boton-registro'])) {
 
 
 $verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_user WHERE correo = '$correo'");
+
     if(mysqli_num_rows($verificar_correo) > 0){
         echo '<script>
             alert("ESTE NOMBRE DE USUARIO YA ESTA EN USO, UTILICE UNO DIFERENTE");
@@ -32,10 +34,11 @@ $verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_user WHERE c
         exit();
     }          
 
+    $ejecutar2 = mysqli_query($conexion, $id_increment);
+    $ejecutar = mysqli_query($conexion, $query);       
 
-    $ejecutar = mysqli_query($conexion, $query);        
 
-    if($ejecutar){
+    if($ejecutar && $id_increment){
         echo '<script>
                 alert("USUARIO REGISTRADO EXITOSAMENTE");
                 window.location = "../index.php";
