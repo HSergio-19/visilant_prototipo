@@ -4,7 +4,7 @@
 	$id = null;
 	$correo = $_POST["correo"];
 	$contrasena = $_POST["contrasena"];
-	$id_cargo = $_POST["id_cargo"];
+	$id_cargo = 1;
 		
 	$sql = "INSERT INTO visilant_user VALUES('$id','$correo', '$contrasena', '$id_cargo')";
 

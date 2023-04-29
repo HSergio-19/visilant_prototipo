@@ -11,6 +11,4 @@
             <a href="#">Ayuda</a>              
             <a href="#">Contacto</a>
         </nav>
-
-        <script>src="js/code.js"</script>
 </header>

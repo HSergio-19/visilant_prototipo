@@ -51,8 +51,6 @@ $query = mysqli_query($conexion, $sql);
                 <input type="text" class = "campo" name="correo" placeholder = "Correo" > <br>
                 <p>INGRESASR CONTRASEÑA</p>
                 <input type="text" class = "campo" name="contrasena" placeholder = "Contraseña"> <br>
-                <p>INGRESAR CARGO <br> (1 = administrador) o (2 = usuario)</p>
-                <input type="text" class = "campo" name="id_cargo" placeholder = "Cargo"> <br>
                 <input type="submit" class = "boton" value="Crear Usuario"> <br>
             </form>
         </div>

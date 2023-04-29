@@ -26,7 +26,6 @@
             <input type="hidden" name="id" value="<?= $row['id']?>">
             <input type="text" name="correo" placeholder = "Correo" value="<?= $row['correo']?>">
             <input type="text" name="contrasena" placeholder = "Contrasena" value="<?= $row['contrasena']?>">
-            <input type="text" name="id_cargo" placeholder = "Cargo" value="<?= $row['id_cargo']?>">
             <input type="submit" value="actualizar">
         </form>
     </div>

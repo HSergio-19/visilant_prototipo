@@ -1,0 +1,58 @@
+/*FORMULARIOS REGISTRO E INICIO DE SESION*/
+
+.titulo-descripcion {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #3a3a3a;
+    text-align: center;
+    color: white;
+}
+
+
+.form-registro{
+    background-color: #3a3a3a;
+    margin: 0 auto;
+    padding: 10px;
+    width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    height: 300px;
+
+}
+
+.campo {
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+}
+
+.form-registro .boton {
+    width: 200px;
+    border: none;
+    padding: 20px;
+    font-size: 20;
+    border-radius: 10px;
+    background-color:  #3a3a3a; 
+    color: white;
+    border: 1px solid #8adcff;
+} 
+
+.form-registro .boton:hover {
+    background-color: #8adcff; 
+    color: #3a3a3a;
+    font-size: 20px;
+    transition: all 300ms ease;
+} 
+
+.form-registro p{
+    background-color: #3a3a3a;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+}
