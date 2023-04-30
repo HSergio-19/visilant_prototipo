@@ -12,8 +12,6 @@
 
    <?php require "header.php"?>
 
-
-
     <!--FORMULARIO DE REGISTRO -->
 
     <div class = "titulo-descripcion">

@@ -37,8 +37,6 @@
         </div>
     </div>
 
-    
-       
     <br> <br> <br>
 
     <div class = "info-pagina">
