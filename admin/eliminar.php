@@ -1,5 +1,8 @@
+
+<!--FUNCION DE ELIMINAR DATOS DE USUARIO-->
+
 <?php 
-    require "conexion.php";
+    require "../database/conexion.php";
 
     $id = $_GET['id'];
 

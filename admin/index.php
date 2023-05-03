@@ -1,6 +1,6 @@
 <?php
 
-require "conexion.php";
+require "../database/conexion.php";
 
 //SEGURIDAD DE PAGINACION DE INICIO DE SESION
 session_start();
@@ -25,6 +25,9 @@ $sql = "SELECT * FROM visilant_user";
 $query = mysqli_query($conexion, $sql);
 
 ?>
+
+
+<!--PAGINA PRINCIPAL DEL ADMINISTRADOR-->
 
 <!DOCTYPE html>
 <html lang="en">

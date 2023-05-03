@@ -10,12 +10,12 @@
 </head>
 
 <body>
+
+    <!--EXTENSION DEL HEADER DE LA PAGINA USANDO REQUIRE--> 
     
-    <?php require "header.php" ?> <!--ENCABEZADO DE LA PAGINA (CONTIENE EL LOGO, NOMBRE Y MENU DE NAVEGACION)--> 
+    <?php require "header.php" ?> 
 
-
-
-    <!--Informacion principal de la pagina, portada principal--> 
+    <!--TITULO Y DESCRIPCION PRINCIPAL DE LA PAGINA--> 
       
     <div class = "index-titulo" >
         <h1>CONTROL Y GESTIÓN DE <br> VISITAS EN URBANIZACIONES</h1>
@@ -24,7 +24,7 @@
     
     <br> <br> <br>
 
-    <!--Informacion secundaria de la pagina, portada principal 2--> 
+    <!--INFORMACION RELEVANTE DE SERVICIOS DE LA PAGINA, VERSION RESUMIDA--> 
 
     <div class = "info-pagina">
         <div class = "info-pagina-text">
@@ -36,7 +36,7 @@
             <img src="img/registro.png" alt="registro.png">
         </div>
     </div>
-
+         
     <br> <br> <br>
 
     <div class = "info-pagina">
@@ -53,6 +53,11 @@
     <br> <br> <br>
       
 </body>
+
+
+
+
+ <!--EXTENSION DEL FOOTER DE LA PAGINA USANDO REQUIRE--> 
 
   <?php require 'footer.php'?> 
 

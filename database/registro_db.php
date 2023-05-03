@@ -1,3 +1,5 @@
+<!--FUNCION DE REGISTRO DE USUARIO EN LA PAGINA-->
+
 <?php
 require "conexion.php";
 
@@ -15,6 +17,7 @@ if (!empty($_POST['boton-registro'])) {
         
         $query = "INSERT INTO visilant_user(correo, contrasena, id_cargo)
                   VALUES('$correo', '$contrasena', '$id_cargo')"; 
+        $id_increment = "ALTER TABLE visilant_user;";
     };
 
 };
