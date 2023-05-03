@@ -20,9 +20,6 @@ if (!empty($_POST['boton-registro'])) {
 };
 
 
-
-
-
 $verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_user WHERE correo = '$correo'");
 
     if(mysqli_num_rows($verificar_correo) > 0){

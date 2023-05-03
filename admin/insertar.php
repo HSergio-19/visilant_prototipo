@@ -21,7 +21,7 @@
 
 	$query = mysqli_query($conexion, $sql);
      
-	if($query && $ejecutar2) {
+	if($query) {
 		header("location: index.php");
 	};
 
