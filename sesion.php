@@ -10,14 +10,18 @@
 </head>
 <body>
 
+    <!--EXTENSION DEL HEADER DE LA PAGINA USANDO REQUIRE-->
+
    <?php require "header.php"?>
 
-    <!--FORMULARIO DE REGISTRO -->
+    <!--ENCABEZADO DEL FORMULARIO-->
 
     <div class = "titulo-descripcion">
         <h1>INICIA SESION</h1>
         <h4>MAnten el orden de tus visitas y visualiza su control en tiempo real</h4>
     </div>
+
+    <!--FORMULARIO DE REGISTRO-->
           
     <form class = "form-registro" action="database/sesion_db.php" method="POST">
             <p> <b>CORREO</b></p>

@@ -1,3 +1,5 @@
+<!--FUNCION DE REGISTRO DE USUARIO EN LA PAGINA-->
+
 <?php
 require "conexion.php";
 
@@ -15,7 +17,7 @@ if (!empty($_POST['boton-registro'])) {
         
         $query = "INSERT INTO visilant_user(correo, contrasena, id_cargo)
                   VALUES('$correo', '$contrasena', '$id_cargo')"; 
-        $id_increment = "ALTER TABLE visilant_user AUTO_INCREMENT=1;";
+        $id_increment = "ALTER TABLE visilant_user;";
     };
 
 };
@@ -34,11 +36,10 @@ $verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_user WHERE c
         exit();
     }          
 
-    $ejecutar2 = mysqli_query($conexion, $id_increment);
     $ejecutar = mysqli_query($conexion, $query);       
 
 
-    if($ejecutar && $id_increment){
+    if($ejecutar){
         echo '<script>
                 alert("USUARIO REGISTRADO EXITOSAMENTE");
                 window.location = "../index.php";

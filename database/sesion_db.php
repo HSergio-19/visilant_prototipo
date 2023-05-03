@@ -1,5 +1,7 @@
+<!--FUNCION DE INICIO DE SESION DE USUARIO EN LA PAGINA-->
+
 <?php
-require "conexion.php";
+require "../database/conexion.php";
 
 $correo = $_POST['correo'];
 $contrasena = $_POST['contrasena'];
@@ -17,7 +19,7 @@ if ($filas ['id_cargo'] == 2) {
 
     header("location:../usuario/home.php");
 
-} else if ($filas ['id_cargo']==1) {
+} else if ($filas ['id_cargo'] == 1) {
 
     header("location:../admin/index.php");
 

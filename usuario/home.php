@@ -1,4 +1,6 @@
 <?php
+require "../database/conexion.php";
+
 //SEGURIDAD DE PAGINACION DE INICIO DE SESION
 session_start();
 error_reporting();
@@ -16,8 +18,9 @@ if($validar_sesion==null || $validar_sesion==''){
 	die();
 
 }
-
 ?>
+
+<!--INICIO DEL HOME DE LA PAGINA CON CUENTA QUE INICIO SESION-->
 
 <!DOCTYPE html>
 <html lang="en">

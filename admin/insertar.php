@@ -1,5 +1,7 @@
+<!--FUNCION DE INGRESAR NUEVO USUARIO AL SISTEMA-->
+
 <?php 
-	require "conexion.php";
+	require "../database/conexion.php";
 	
 	$id = null;
 	$correo = $_POST["correo"];

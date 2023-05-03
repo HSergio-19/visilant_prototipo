@@ -10,16 +10,18 @@
 </head>
 <body>
 
+    <!--EXTENSION DEL HEADER DE LA PAGINA USANDO REQUIRE-->
+
    <?php require "header.php"?>
 
-
-
-    <!--FORMULARIO DE REGISTRO -->
+    <!--ENCABEZADO DEL FORMULARIO-->
 
     <div class = "titulo-descripcion">
         <h1>REGISTRATE AHORA</h1>
         <h4>Prueba las herramientas que ofrecemos para gestionar y controlar las visitas en tu urbanizacion.</h4>
     </div>
+
+    <!--FORMULARIO DE REGISTRO -->
           
     <form class = "form-registro" action="database/registro_db.php" method="POST">
             <p> <b>CORREO</b></p>

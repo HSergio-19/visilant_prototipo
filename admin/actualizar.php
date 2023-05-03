@@ -1,5 +1,7 @@
+<!--FUNCION DE ACTUALIZAR DATOS DE USUARIO-->
+
 <?php 
-    require "conexion.php";
+    require "../database/conexion.php";
 
     $id = $_POST['id'];
 	$correo = $_POST["correo"];
