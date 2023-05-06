@@ -20,7 +20,7 @@ if($validar_sesion==null || $validar_sesion==''){
 
 }
 
-$sql = "SELECT * FROM visilant_user";
+$sql = "SELECT * FROM visilant_db";
 
 $query = mysqli_query($conexion, $sql);
 

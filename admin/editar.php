@@ -5,7 +5,7 @@
 
     $id = $_GET['id'];
 
-    $sql = "SELECT * FROM visilant_user WHERE id='$id'";
+    $sql = "SELECT * FROM visilant_db WHERE id='$id'";
 
 	$query = mysqli_query($conexion, $sql);
 

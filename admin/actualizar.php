@@ -7,7 +7,7 @@
 	$correo = $_POST["correo"];
 	$contrasena = $_POST["contrasena"];
 
-	$sql = "UPDATE visilant_user SET correo='$correo', contrasena='$contrasena' WHERE id='$id'";
+	$sql = "UPDATE visilant_db SET correo='$correo', contrasena='$contrasena' WHERE id='$id'";
 
 	$query = mysqli_query($conexion, $sql);
 

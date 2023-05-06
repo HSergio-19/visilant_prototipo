@@ -9,7 +9,7 @@ session_start();
 $_SESSION['correo']=$correo;
 
 
-$consulta = "SELECT * FROM visilant_user WHERE correo = '$correo' and contrasena = '$contrasena'";
+$consulta = "SELECT * FROM visilant_db WHERE correo = '$correo' and contrasena = '$contrasena'";
 $resultado = mysqli_query($conexion, $consulta);
 
 

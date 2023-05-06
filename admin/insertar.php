@@ -8,11 +8,11 @@
 	$contrasena = $_POST["contrasena"];
 	$id_cargo = 2;
 		
-	$sql = "INSERT INTO visilant_user VALUES('$id','$correo', '$contrasena', '$id_cargo')";
+	$sql = "INSERT INTO visilant_db VALUES('$id','$correo', '$contrasena', '$id_cargo')";
 
-	$id_increment = "ALTER TABLE visilant_user AUTO_INCREMENT=1;";
+	$id_increment = "ALTER TABLE visilant_db AUTO_INCREMENT=1;";
 
-	$verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_user WHERE correo = '$correo'");
+	$verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_db WHERE correo = '$correo'");
 
 
     if(mysqli_num_rows($verificar_correo) > 0){
