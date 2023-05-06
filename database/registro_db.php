@@ -13,10 +13,9 @@ if (!empty($_POST['boton-registro'])) {
         
         $correo = $_POST["correo"];
         $contrasena = $_POST["contrasena"];
-        $id_cargo = 2;
         
-        $query = "INSERT INTO visilant_db(correo, contrasena, id_cargo)
-                  VALUES('$correo', '$contrasena', '$id_cargo')"; 
+        $query = "INSERT INTO visilant_db(correo, contrasena)
+                  VALUES('$correo', '$contrasena')"; 
         $id_increment = "ALTER TABLE visilant_db;";
     };
 
