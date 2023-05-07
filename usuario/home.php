@@ -1,22 +1,7 @@
 <?php
-
-require "../database/conexion.php";
-
 session_start();
-error_reporting();
-$validar_sesion = $_SESSION['correo'];
+error_reporting(0);
 
-
-if($validar_sesion==null || $validar_sesion==''){
-	echo '
-		<script>
-			alert("POR FAVOR INGRESE LOS DATOS CORRECTOS");
-			window.location = "../index.php"; 
-		</script>
-	';
-	session_destroy();
-	die();
-};
 ?>
 
 <!--INICIO DEL HOME DE LA PAGINA CON CUENTA QUE INICIO SESION-->

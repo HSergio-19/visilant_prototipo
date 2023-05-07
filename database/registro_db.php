@@ -1,5 +1,3 @@
-<!--FUNCION DE REGISTRO DE USUARIO EN LA PAGINA-->
-
 <?php
 require "conexion.php";
 

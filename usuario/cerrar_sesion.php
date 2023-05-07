@@ -2,5 +2,8 @@
 <?php
 	session_start();
 	session_destroy();
-	header("location: ../index.php");
+	echo'<script>
+    alert("HAS CERRADO SESION");
+    window.location="../index.php";
+    </script>';
 ?>

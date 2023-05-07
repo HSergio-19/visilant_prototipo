@@ -7,14 +7,19 @@ $contrasena = $_POST['contrasena'];
 session_start();
 $_SESSION['correo'] = $correo;
 
+
 $consulta = "SELECT * FROM visilant WHERE correo = '$correo' and contrasena = '$contrasena'";
 $resultado = mysqli_query($conexion, $consulta);
 
 
 $filas = mysqli_num_rows($resultado);
 
-if ($filas){
-    header("location:../usuario/home.php");
+if ($filas > 0){
+    echo '<script>
+        window.location="../usuario/home.php";
+    </script>';
+
+
 } else {
 
     echo'<script>
