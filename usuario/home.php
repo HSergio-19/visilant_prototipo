@@ -1,15 +1,13 @@
 <?php
-//CONEXION CON LA BASE DE DATOS
+
 require "../database/conexion.php";
 
-//SEGURIDAD DE PAGINACION DE INICIO DE SESION
 session_start();
 error_reporting();
 $validar_sesion = $_SESSION['correo'];
-$validar_contrasena = $_SESSION['contrasena'];
 
-//VALIDAR SI INGRESO UN CORREO EXISTENTE CORRECTO O NINGUNO 
-if($validar_sesion==null || $validar_sesion=='' || $validar_contrasena==null || $validar_contrasena==''){
+
+if($validar_sesion==null || $validar_sesion==''){
 	echo '
 		<script>
 			alert("POR FAVOR INGRESE LOS DATOS CORRECTOS");

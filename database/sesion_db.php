@@ -1,27 +1,20 @@
 <!--FUNCION DE INICIO DE SESION DE USUARIO EN LA PAGINA-->
-
 <?php
-$correo = $_POST['correo'];
-$contrasena = $_POST['contrasena'];
-
-
-session_start();
-$_SESSION['correo'] = $correo;
-$_SESSION['contrasena'] = $contrasena;
-
-
 require "conexion.php";
 
-$consulta = "SELECT * FROM visilant_db WHERE correo = '$correo' and contrasena = '$contrasena'";
+$correo = $_POST['correo'];
+$contrasena = $_POST['contrasena'];
+session_start();
+$_SESSION['correo'] = $correo;
+
+$consulta = "SELECT * FROM visilant WHERE correo = '$correo' and contrasena = '$contrasena'";
 $resultado = mysqli_query($conexion, $consulta);
 
 
-$filas = mysqli_fetch_array($resultado);
+$filas = mysqli_num_rows($resultado);
 
 if ($filas){
-
     header("location:../usuario/home.php");
-
 } else {
 
     echo'<script>

@@ -1,12 +1,12 @@
 <?php 
     $destinatario = 'serujiourutado@gmail.com';
 
-    $correo = $_POST['correo'];
+    $email = $_POST['email'];
     $asunto = $_POST['asunto'];
     $msg = $_POST['msg'];
 
     $header = "Enviado desde formulario de contacto Visilant";
-    $mensaje = $msg . "\nAtentamente: " . $correo;
+    $mensaje = $msg . "\nAtentamente: " . $email;
 
 
     mail($destinatario, $asunto, $mensaje, $header);

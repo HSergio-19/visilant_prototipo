@@ -62,7 +62,7 @@
         <h3 class = "titulo-contacto">CONTACTANOS</h3>
 
         <form action="contacto.php" method = "POST" class = "form-contacto">
-            <input type="text" class = "input-contacto" placeholder = "CORREO" name = "correo"> <br>
+            <input type="text" class = "input-contacto" placeholder = "CORREO" name = "email"> <br>
             <input type="text" class = "input-contacto" placeholder = "ASUNTO" name = "asunto"> <br>
             <textarea class = "input-contacto" placeholder = "INGRESE SU COMENTARIO" name = "msg"></textarea> <br>    
             <input type="submit" class = "input-boton" value = "ENVIAR">

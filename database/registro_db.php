@@ -13,14 +13,13 @@ if (!empty($_POST['boton-registro'])) {
         
         $correo = $_POST["correo"];
         $contrasena = $_POST["contrasena"];
-        $cargo = 2;
         
-        $query = "INSERT INTO visilant_db(correo, contrasena, cargo) VALUES ('$correo', '$contrasena', 'cargo')"; 
+        $query = "INSERT INTO visilant(correo, contrasena) VALUES ('$correo', '$contrasena')"; 
     };
 
 };
 
-$verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_db WHERE correo = '$correo'");
+$verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant WHERE correo = '$correo'");
 
     if(mysqli_num_rows($verificar_correo) > 0){
         echo '<script>
