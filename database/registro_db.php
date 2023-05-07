@@ -16,7 +16,6 @@ if (!empty($_POST['boton-registro'])) {
         
         $query = "INSERT INTO visilant_db(correo, contrasena)
                   VALUES('$correo', '$contrasena')"; 
-        $id_increment = "ALTER TABLE visilant_db;";
     };
 
 };

@@ -47,6 +47,12 @@ if($validar_sesion==null || $validar_sesion=='' || $validar_contrasena==null || 
 	</header>
 
 
+	<div class = "titulo">
+		<h2 class = "bienvenida">BIENVENIDO A VISILANT</h2>
+		<p class = "pregunta">¿Qué acción desea realizar?</p>
+	</div>
+
+
 	<div class = "menu-operaciones">
 
 		<div class = "caja-operaciones">

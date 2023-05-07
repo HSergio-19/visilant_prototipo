@@ -54,9 +54,6 @@
       
 </body>
 
-
-
-
  <!--EXTENSION DEL FOOTER DE LA PAGINA USANDO REQUIRE--> 
 
   <?php require 'footer.php'?> 
