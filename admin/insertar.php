@@ -8,14 +8,8 @@
 	$contrasena = $_POST["contrasena"];
 			
 	$sql = "INSERT INTO visilant_db VALUES('$id','$correo', '$contrasena')";
-
-<<<<<<< HEAD
-	$verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_user WHERE correo = '$correo'");
-=======
-	$id_increment = "ALTER TABLE visilant_db AUTO_INCREMENT=1";
-
+	
 	$verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_db WHERE correo = '$correo'");
->>>>>>> ramaSergio
 
 
     if(mysqli_num_rows($verificar_correo) > 0){
@@ -28,14 +22,10 @@
 
 	$query = mysqli_query($conexion, $sql);
      
-<<<<<<< HEAD
 	if($query) {
-=======
-	if($query && $query2) {
->>>>>>> ramaSergio
 		header("location: index.php");
 	} else {
-		echo 'NO FUNCIONA MANO';
+		echo 'ERROR, INTENTE EN OTRO MOMENTO';
 	};
 
 	mysqli_close($conexion);

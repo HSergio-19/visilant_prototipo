@@ -17,7 +17,7 @@ $resultado = mysqli_query($conexion, $consulta);
 
 $filas = mysqli_fetch_array($resultado);
 
-if ($filas ['correo'] == 'admin@gmail.com' ) {
+if ($filas ['correo'] == 'admin@gmail.com') {
 
     header("location:../admin/index.php");
 

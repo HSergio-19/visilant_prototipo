@@ -6,9 +6,10 @@ require "../database/conexion.php";
 session_start();
 error_reporting();
 $validar_sesion = $_SESSION['correo'];
+$validar_contrasena = $_SESSION['contrasena'];
 
 
-if($validar_sesion==null || $validar_sesion==''){
+if($validar_sesion==null || $validar_sesion=='' || $validar_contrasena==null || $validar_contrasena==''){
 	echo '
 		<script>
 			alert("POR FAVOR DEBES INICIAR SESION");
