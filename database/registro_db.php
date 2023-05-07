@@ -20,15 +20,7 @@ if (!empty($_POST['boton-registro'])) {
 
 };
 
-
-<<<<<<< HEAD
-$verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_user WHERE correo = '$correo'");
-=======
-
-
-
 $verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_db WHERE correo = '$correo'");
->>>>>>> ramaSergio
 
     if(mysqli_num_rows($verificar_correo) > 0){
         echo '<script>

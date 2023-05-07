@@ -1,7 +1,7 @@
 <!--FUNCION DE INICIO DE SESION DE USUARIO EN LA PAGINA-->
 
 <?php
-require "../database/conexion.php";
+require "conexion.php";
 
 $correo = $_POST['correo'];
 $contrasena = $_POST['contrasena'];
