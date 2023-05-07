@@ -1,8 +1,6 @@
 <!--FUNCION DE INICIO DE SESION DE USUARIO EN LA PAGINA-->
 
 <?php
-require "conexion.php";
-
 $correo = $_POST['correo'];
 $contrasena = $_POST['contrasena'];
 
@@ -12,17 +10,15 @@ $_SESSION['correo'] = $correo;
 $_SESSION['contrasena'] = $contrasena;
 
 
+require "conexion.php";
+
 $consulta = "SELECT * FROM visilant_db WHERE correo = '$correo' and contrasena = '$contrasena'";
 $resultado = mysqli_query($conexion, $consulta);
 
 
 $filas = mysqli_fetch_array($resultado);
 
-if ($filas ['cargo'] == 1) {
-
-    header("location:../admin/index.php");
-
-} else if ($filas ['cargo'] == 2) {
+if ($filas){
 
     header("location:../usuario/home.php");
 

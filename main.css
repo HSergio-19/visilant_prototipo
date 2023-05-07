@@ -151,15 +151,87 @@ div {
 /*PIE DE PAGINA*/
 
 footer {
+    font-family: 'Trebuchet MS', sans-serif; 
     background-color: #3a3a3a;
     margin: 0;
-    bottom: 0;
     text-align: left;
+    padding: 10px;
+    display: flex;
+}
+
+
+/*FORMULARIO CONTACTO*/
+
+.form-contacto {
+    border: 4px solid #8adcff;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.titulo-contacto{
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+}
+
+.contacto{
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+ 
+}
+
+.input-contacto {
+    margin: 10px;
+    height: 40px;
+    width: 95%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+
+.input-contacto::placeholder {
+    color: rgba(255,255,255,0.5)
+}
+
+.input-contacto:hover {
+    border:none ;
+    transition: all 300ms ease;
+    border-bottom: 1px solid #8adcff;
+
+}
+
+
+.input-boton {
+    padding: 10px;
+    margin: 10px;
+    width: 95%;
+    background-color: #8adcff;
+    border: 1px solid #8adcff;
+    border-radius: 10px;
+}
+
+.input-boton:hover {
+    transition: all 400ms ease;
+    background-color: #3a3a3a;
+    border: 1px solid #8adcff;
+    color: white;
+}
+
+
+/*REDES SOCIALES*/
+
+.redes-sociales {
+    width: 50%;
+    margin: 10px;
     padding: 10px;
 }
 
-footer img{
-    height: 80px;
-    width: 80px;
-    padding: 10px;
+.titulo-redes {
+    font-size: 30px;
+    color: white;
+    margin: 10px;
 }

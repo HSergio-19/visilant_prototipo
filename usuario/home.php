@@ -46,15 +46,7 @@ if($validar_sesion==null || $validar_sesion=='' || $validar_contrasena==null || 
         </nav>
 	</header>
 
-
-	<div class = "titulo">
-		<h2 class = "bienvenida">BIENVENIDO A VISILANT</h2>
-		<p class = "pregunta">¿Qué acción desea realizar?</p>
-	</div>
-
-
 	<div class = "menu-operaciones">
-
 		<div class = "caja-operaciones">
 			<a href="create-table.php">
 				<img src="../img/create.png" alt="create.png">
