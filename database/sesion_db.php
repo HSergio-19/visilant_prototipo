@@ -6,6 +6,7 @@ require "conexion.php";
 $correo = $_POST['correo'];
 $contrasena = $_POST['contrasena'];
 
+
 session_start();
 $_SESSION['correo'] = $correo;
 $_SESSION['contrasena'] = $contrasena;
@@ -17,11 +18,11 @@ $resultado = mysqli_query($conexion, $consulta);
 
 $filas = mysqli_fetch_array($resultado);
 
-if ($filas ['correo'] == 'admin@gmail.com') {
+if ($filas ['cargo'] == 1) {
 
     header("location:../admin/index.php");
 
-} else if ($filas ['correo'] != 'admin@gmail.com') {
+} else if ($filas ['cargo'] == 2) {
 
     header("location:../usuario/home.php");
 

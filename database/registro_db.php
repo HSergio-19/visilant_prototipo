@@ -13,8 +13,9 @@ if (!empty($_POST['boton-registro'])) {
         
         $correo = $_POST["correo"];
         $contrasena = $_POST["contrasena"];
+        $cargo = 2;
         
-        $query = "INSERT INTO visilant_db(correo, contrasena) VALUES ('$correo', '$contrasena')"; 
+        $query = "INSERT INTO visilant_db(correo, contrasena, cargo) VALUES ('$correo', '$contrasena', 'cargo')"; 
     };
 
 };

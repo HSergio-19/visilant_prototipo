@@ -6,8 +6,9 @@
 	$id = null;
 	$correo = $_POST["correo"];
 	$contrasena = $_POST["contrasena"];
+	$cargo = 2;
 			
-	$sql = "INSERT INTO visilant_db VALUES('$id','$correo', '$contrasena')";
+	$sql = "INSERT INTO visilant_db VALUES('$id','$correo', '$contrasena', '$cargo')";
 	
 	$verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_db WHERE correo = '$correo'");
 
