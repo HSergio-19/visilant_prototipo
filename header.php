@@ -8,7 +8,6 @@
         <nav>
             <a href="sesion.php">Iniciar Sesion</a>
             <a href="registro.php">Registrate</a>
-            <a href="#">Ayuda</a>              
-            <a href="#">Contacto</a>
+            <a href="#contacto">Contacto</a>
         </nav>
 </header>

@@ -20,7 +20,7 @@ if($validar_sesion==null || $validar_sesion==''){
 
 }
 
-$sql = "SELECT * FROM visilant_user";
+$sql = "SELECT * FROM visilant_db";
 
 $query = mysqli_query($conexion, $sql);
 
@@ -67,7 +67,6 @@ $query = mysqli_query($conexion, $sql);
                         <th class = "titulo" >ID</th>
                         <th class = "titulo" >CORREO</th>
                         <th class = "titulo" >CONTRASEÑA</th>
-                        <th class = "titulo" >CARGO</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -76,8 +75,6 @@ $query = mysqli_query($conexion, $sql);
                         <th><?= $row["id"]?></th>
                         <th><?= $row["correo"]?></th>
                         <th><?= $row["contrasena"]?></th>
-                        <th><?= $row["id_cargo"]?></th>
-
 
                         <th><a href="editar.php?id=<?= $row['id'] ?>">EDITAR</a></th>
                         <th><a href="eliminar.php?id=<?= $row['id'] ?>">ELIMINAR</a></th>

@@ -13,17 +13,22 @@ if (!empty($_POST['boton-registro'])) {
         
         $correo = $_POST["correo"];
         $contrasena = $_POST["contrasena"];
-        $id_cargo = 2;
         
-        $query = "INSERT INTO visilant_user(correo, contrasena, id_cargo)
-                  VALUES('$correo', '$contrasena', '$id_cargo')"; 
-        $id_increment = "ALTER TABLE visilant_user;";
+        $query = "INSERT INTO visilant_db(correo, contrasena)
+                  VALUES('$correo', '$contrasena')"; 
     };
 
 };
 
 
+<<<<<<< HEAD
 $verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_user WHERE correo = '$correo'");
+=======
+
+
+
+$verificar_correo = mysqli_query($conexion, "SELECT * FROM visilant_db WHERE correo = '$correo'");
+>>>>>>> ramaSergio
 
     if(mysqli_num_rows($verificar_correo) > 0){
         echo '<script>
