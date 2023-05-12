@@ -2,6 +2,6 @@
 
 <?php
 
-    $conexion = mysqli_connect("localhost", "root", "", "id20621308_test_visilant");
+    $conexion = mysqli_connect("localhost", "root", "", "visilant");
 
 ?>
