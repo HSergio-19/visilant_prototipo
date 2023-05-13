@@ -4,6 +4,6 @@
 	session_destroy();
 	echo'<script>
     alert("HAS CERRADO SESION");
-    window.location="../index.php";
+    window.location="../../index.php";
     </script>';
 ?>

@@ -15,16 +15,16 @@ $resultado = mysqli_query($conexion, $consulta);
 $filas = mysqli_num_rows($resultado);
 
 if ($filas > 0){
-    echo 'SESION INICIADA';
-    header("location=../usuario/home.php");
-
+    echo '<script>
+        window.location = "../user/home.php"; 
+    </script>';
 
 } else {
 
-    echo'<script>
-        alert("INGRESE LOS DATOS CORRECTOS POR FAVOR");
+    echo '<script>
+    alert("ERROR, INGRESE LOS DATOS CORRECTOS");
+        window.location = "../sesion.php"; 
     </script>';
-    header("location=../sesion.php");
 
 }
 

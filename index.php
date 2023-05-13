@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="website icon" type="png" href="img/icon.png">
     <title>Visilant - Sistema de Control de Visitas</title>
 </head>
@@ -61,7 +61,7 @@
     <div class = "contacto" id = "contacto">
         <h3 class = "titulo-contacto">CONTACTANOS</h3>
 
-        <form action="contacto.php" method = "POST" class = "form-contacto">
+        <form action="funtions/contacto.php" method = "POST" class = "form-contacto">
             <input type="text" class = "input-contacto" placeholder = "CORREO" name = "correo"> <br>
             <input type="text" class = "input-contacto" placeholder = "ASUNTO" name = "asunto"> <br>
             <textarea class = "input-contacto" placeholder = "INGRESE SU COMENTARIO" name = "msg"></textarea> <br>    
@@ -69,7 +69,6 @@
         </form>
 
     </div>
-
 
     <div class = "redes-sociales">
         <h3 class = "titulo-redes">REDES SOCIALES</h3>
