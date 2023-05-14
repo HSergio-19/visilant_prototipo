@@ -8,7 +8,7 @@ session_start();
 $_SESSION['correo'] = $correo;
 
 
-$consulta = "SELECT * FROM user WHERE correo = '$correo' and contrasena = '$contrasena'";
+$consulta = "SELECT * FROM visilant WHERE correo = '$correo' and contrasena = '$contrasena'";
 $resultado = mysqli_query($conexion, $consulta);
 
 
