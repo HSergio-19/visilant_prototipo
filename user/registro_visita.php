@@ -38,15 +38,14 @@
         <input type="text" name = "apellido" class = "input_campo">
 
         <p class = "titulo_campo"><b>CEDULA:</b></p>
-        <input type="number" name = "cedula" class = "input_campo">
+        <input type="text" name = "cedula" class = "input_campo">
 
-        <p class = "titulo_campo"><b>TELEFONO:</b></p>
-        <input type="number" name = "telefono" class = "input_campo">
+        
 
+       
     </div>
 
     <div class = "seccion_2">
-
 
         <p class = "titulo_campo"><b>TABLA DE VISITA:</b></p>
         <input type="text" name = "tabla" class = "input_campo">
@@ -54,8 +53,7 @@
         <p class = "titulo_campo"><b>¿A QUIEN VISITA?</b></p>
         <input type="text" name = "q_visita" class = "input_campo">
 
-        <p class = "titulo_campo"><b>MOTIVO DE VISITA:</b></p>
-        <input type="text" name = "motivo" class = "input_campo">
+
 
     </div>
 

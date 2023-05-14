@@ -14,6 +14,7 @@ $query = mysqli_query($conexion, $sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="website icon" type="png" href="../img/icon.png">
     <link rel="stylesheet" href="css/header_style.css">
+    <link rel="stylesheet" href="css/monitor_visita_style.css">
     <title>Visilant</title>
 </head>
 
@@ -31,17 +32,16 @@ $query = mysqli_query($conexion, $sql);
 </header>
 
 <body>
-     <div>
-        <h2>LISTA DE ESTUDIANTES</h2>
+    <h2 class = "titulo_lista">MODIFICADOR DE VISITAS</h2>
+    <p class = "titulo_lista">Puedes modificar los datos de tus visitas o finalizarlas</p>
+     <div class = "lista_visita">
         <table>
             <thead>
                 <tr>
                     <th>NOMBRE</th>
                     <th>APELLIDO</th>
                     <th>CEDULA</th>
-                    <th>TELEFONO</th>
-                    <th>¿A QUIEN VISITA?</th>
-                    <th>MOTIVO</th>
+                    <th>VISITA A</th>
                     <th>ESTADO</th>
                 </tr>
             </thead>
@@ -51,14 +51,12 @@ $query = mysqli_query($conexion, $sql);
                 <th><?= $row["nombre"]?></th>
                     <th><?= $row["apellido"]?></th>
                     <th><?= $row["cedula"]?></th>
-                    <th><?= $row["telefono"]?></th>
                     <th><?= $row["quien_visita"]?></th>
-                    <th><?= $row["motivo"]?></th>
                     <th><?= $row["estado"]?></th>
 
-                    <th><a href="editar.php?id=<?= $row['id'] ?>">EDITAR</a></th>
-                    <th><a href="db/eliminar.php?id=<?= $row['id'] ?>">ELIMINAR</a></th>
-                    <th><a href="db/finalizar.php?id=<?= $row['id'] ?>">FINALIZAR VISITA</a></th>
+                    <th><a class = "boton" href="monitor_editar_visita.php?id=<?= $row['id'] ?>">EDITAR</a></th>
+                    <th><a class = "boton" href="db/eliminar.php?id=<?= $row['id'] ?>">ELIMINAR</a></th>
+                    <th><a class = "boton" href="db/finalizar.php?id=<?= $row['id'] ?>">FINALIZAR</a></th>
                 </tr>
                 <?php endwhile; ?>
             </tbody>

@@ -1,5 +1,5 @@
 <?php 
-    require "../conexion_2.php";
+    require "conexion_2.php";
 
     $id = $_GET['id'];
 

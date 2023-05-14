@@ -13,6 +13,7 @@ $query = mysqli_query($conexion, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header_style.css">
+    <link rel="stylesheet" href="css/ver_visita_style.css">
 	<link rel="website icon" type="png" href="../img/icon.png">
     <title>Visilant</title>
 </head>
@@ -31,17 +32,16 @@ $query = mysqli_query($conexion, $sql);
 
 
 <body>
-     <div>
-        <h2>LISTA DE VISITAS</h2>
+<h2 class = "titulo_lista">LISTA DE VISITAS</h2>
+<p  class = "titulo_lista">Puedes observar las visitas que tienes registrada en el sistema</p>
+     <div class = "lista_visita">
         <table>
             <thead>
                 <tr>
                     <th>NOMBRE</th>
                     <th>APELLIDO</th>
                     <th>CEDULA</th>
-                    <th>TELEFONO</th>
-                    <th>¿A QUIEN VISITA?</th>
-                    <th>MOTIVO</th>
+                    <th>VISITA A</th>
                     <th>ESTADO</th>
                 </tr>
             </thead>
@@ -51,9 +51,7 @@ $query = mysqli_query($conexion, $sql);
                     <th><?= $row["nombre"]?></th>
                     <th><?= $row["apellido"]?></th>
                     <th><?= $row["cedula"]?></th>
-                    <th><?= $row["telefono"]?></th>
                     <th><?= $row["quien_visita"]?></th>
-                    <th><?= $row["motivo"]?></th>
                     <th><?= $row["estado"]?></th>
                  </tr>
                 <?php endwhile; ?>
