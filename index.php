@@ -69,13 +69,6 @@
         </form>
 
     </div>
-
-    <div class = "redes-sociales">
-        <h3 class = "titulo-redes">REDES SOCIALES</h3>
-
-
-    </div>
-
 </footer>
 
 </html> 

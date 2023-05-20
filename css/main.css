@@ -176,7 +176,6 @@ footer {
 
 .contacto{
     padding: 10px;
-    margin: 10px;
     width: 50%;
  
 }
@@ -219,19 +218,4 @@ footer {
     background-color: #3a3a3a;
     border: 1px solid #8adcff;
     color: white;
-}
-
-
-/*REDES SOCIALES*/
-
-.redes-sociales {
-    width: 50%;
-    margin: 10px;
-    padding: 10px;
-}
-
-.titulo-redes {
-    font-size: 30px;
-    color: white;
-    margin: 10px;
 }

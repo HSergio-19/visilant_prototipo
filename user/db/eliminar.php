@@ -1,5 +1,5 @@
 <?php 
-    require "conexion_2.php";
+    require "../../db/conexion.php";
 
     $id = $_GET['id'];
 
@@ -8,7 +8,10 @@
     $query = mysqli_query($conexion, $sql);
 
     if($query) {
-    header("location: ../monitor_visita.php");
+    echo '<script>
+            alert("SE HA ELIMINADO LOS DATOS DE LA VISITA");
+            window.location = "../monitor_visita.php"; 
+        </script>';
 	};
 
     ?>

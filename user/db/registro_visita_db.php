@@ -1,9 +1,8 @@
 <?php
-    require "conexion_2.php";
+    require "../../db/conexion.php";
  
-
     if (!empty($_POST['boton'])) {
-        if (empty($_POST['nombre']) or empty($_POST['apellido']) or empty($_POST['cedula']) or empty($_POST['telefono']) or empty($_POST['q_visita']) or empty($_POST['tabla']) ) {
+        if (empty($_POST['nombre']) or empty($_POST['apellido']) or empty($_POST['cedula']) or empty($_POST['q_visita']) or empty($_POST['tabla']) ) {
            echo'<script>
            alert("LLENE LOS CAMPOS DE MANERA CORRECTA");
            window.location = "../registro_visita.php"; 
@@ -16,7 +15,7 @@
             $q_visita = $_POST['q_visita'];  
             $tabla = $_POST['tabla']; 
 
-            $mysqli_query_createtable = "INSERT INTO visitas (nombre, apellido, cedula, quien_visita , tabla) VALUES ('$nombre', '$apellido', '$cedula', '$q_visita', '$tabla')";
+            $mysqli_query_createtable = "INSERT INTO visitas (nombre, apellido, cedula, tabla, quien_visita) VALUES ('$nombre', '$apellido', '$cedula', '$tabla', '$q_visita')";
         };
 
     };

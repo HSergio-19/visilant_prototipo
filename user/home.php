@@ -1,21 +1,3 @@
-<?php
-session_start();
-error_reporting(0);
-
-$var_sesion_correo = $_SESSION['correo'];
-
-if ($var_sesion_correo == null or $var_sesion_correo == '') {
-
-	echo '<script>
-		alert("NO TIENES AUTORIZACION, REGISTRATE PRIMERO");
-        window.location = "../index.php"; 
-    </script>';
-	die();	
-};
-
-
-?>
-
 <!--INICIO DEL HOME DE LA PAGINA CON CUENTA QUE INICIO SESION-->
 
 <!DOCTYPE html>

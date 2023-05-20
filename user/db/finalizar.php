@@ -1,5 +1,5 @@
 <?php 
-    require "conexion_2.php";
+    require "../../db/conexion.php";
 
     $id = $_GET['id'];
 
@@ -11,7 +11,10 @@
 	$query = mysqli_query($conexion, $sql);
 
     if($query) {
-		header("location: ../monitor_visita.php");
+		echo '<script>
+            alert("LA VISITA HA PASADO A UN ESTADO DE FINALIZADO");
+            window.location = "../monitor_visita.php"; 
+        </script>';
 	};
 
     ?>

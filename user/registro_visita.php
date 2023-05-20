@@ -40,9 +40,6 @@
         <p class = "titulo_campo"><b>CEDULA:</b></p>
         <input type="text" name = "cedula" class = "input_campo">
 
-        
-
-       
     </div>
 
     <div class = "seccion_2">

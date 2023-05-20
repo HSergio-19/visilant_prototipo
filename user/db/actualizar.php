@@ -1,5 +1,5 @@
 <?php 
-    require "conexion_2.php";
+    require "../../db/conexion.php";
 
 
     $id = $_POST['id'];
@@ -13,7 +13,15 @@
 	$query = mysqli_query($conexion, $sql);
 
 	if($query) {
-		header("location: ../monitor_visita.php");
-	};
+		echo '<script>
+            alert("SE HAN ACTUALIZADO LOS DATOS");
+            window.location = "../monitor_visita.php"; 
+        </script>';
+	}else{
+	    echo '<script>
+            alert("HAS INGRESADO UN DATO DE MANERA ERRONEA");
+            window.location = "../monitor_visita.php"; 
+        </script>';
+	}
 
 ?>

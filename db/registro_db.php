@@ -12,7 +12,7 @@ if (!empty($_POST['boton-registro'])) {
         $correo = $_POST["correo"];
         $contrasena = $_POST["contrasena"];
         
-        $query = "INSERT INTO visilant(correo, contrasena) VALUES ('$correo', '$contrasena')"; 
+        $query = "INSERT INTO user(correo, contrasena) VALUES ('$correo', '$contrasena')"; 
     };
 
 };

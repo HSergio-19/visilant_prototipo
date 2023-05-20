@@ -1,4 +1,5 @@
-<?php require "db/conexion_2.php";
+<?php 
+require "../db/conexion.php";
 
 $sql = "SELECT * FROM visitas";
 
