@@ -23,40 +23,38 @@
 </header>
 
     <h1 class = "titulo_descripcion_h">INGRESE LOS DATOS DE LA VISITA</h1>
-    <p class = "titulo_descripcion_p">Debera llenar los campos para agregar su visita a la tabla</p>
+    <p class = "titulo_descripcion_p">Debe llenar los campos para agregar su visita a la tabla</p>
 
 <div class = "container">
 
     <form action="db/registro_visita_db.php" Method = "POST" class = "form-registro">
 
-    <div class = "seccion_1">
+        <div class = "seccion_1">
 
-        <p class = "titulo_campo"><b>NOMBRE:</b></p>
-        <input type="text" name = "nombre" class = "input_campo">
+            <p class = "titulo_campo"><b>NOMBRE:</b></p>
+            <input type="text" name = "nombre" class = "input_campo">
 
-        <p class = "titulo_campo"><b>APELLIDO:</b></p>
-        <input type="text" name = "apellido" class = "input_campo">
+            <p class = "titulo_campo"><b>APELLIDO:</b></p>
+            <input type="text" name = "apellido" class = "input_campo">
 
-        <p class = "titulo_campo"><b>CEDULA:</b></p>
-        <input type="text" name = "cedula" class = "input_campo">
+            <p class = "titulo_campo"><b>CEDULA:</b></p>
+            <input type="text" name = "cedula" class = "input_campo">
 
-    </div>
+        </div>
 
-    <div class = "seccion_2">
+        <div class = "seccion_2">
 
-        <p class = "titulo_campo"><b>TABLA DE VISITA:</b></p>
-        <input type="text" name = "tabla" class = "input_campo">
+            <p class = "titulo_campo"><b>TABLA DE VISITA:</b></p>
+            <input type="text" name = "tabla" class = "input_campo">
 
-        <p class = "titulo_campo"><b>¿A QUIEN VISITA?</b></p>
-        <input type="text" name = "q_visita" class = "input_campo">
+            <p class = "titulo_campo"><b>¿A QUIEN VISITA?</b></p>
+            <input type="text" name = "q_visita" class = "input_campo">
 
+          </div>
 
-
-    </div>
-
-    <div class = "seccion_3">        
-        <input type="submit" name = "boton" value = "Registrar" class = "boton-registro">
-    </div>
+        <div class = "seccion_3">        
+            <input type="submit" name = "boton" value = "Registrar" class = "boton-registro">
+        </div>
 
     </form>
 

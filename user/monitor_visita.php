@@ -1,10 +1,6 @@
 <?php 
 require "../db/conexion.php";
 
-$sql = "SELECT * FROM visitas";
-
-$query = mysqli_query($conexion, $sql);
-
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +11,7 @@ $query = mysqli_query($conexion, $sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="website icon" type="png" href="../img/icon.png">
     <link rel="stylesheet" href="css/header_style.css">
-    <link rel="stylesheet" href="css/monitor_visita_style.css">
+    <link rel="stylesheet" href="css/monitor_style.css">
     <title>Visilant</title>
 </head>
 
@@ -33,8 +29,13 @@ $query = mysqli_query($conexion, $sql);
 </header>
 
 <body>
-    <h2 class = "titulo_lista">MODIFICADOR DE VISITAS</h2>
+    <h2 class = "titulo_lista">MODIFICAR VISITAS</h2>
     <p class = "titulo_lista">Puedes modificar los datos de tus visitas o finalizarlas</p>
+    <form action="" method="POST">
+        <p class = "ayuda">INGRESE EL NOMBRE DE LA TABLA QUE DESEA CONSULTAR</p>
+        <input type="text" name="busqueda" class="campo">
+        <input type="submit" name="enviar" value="CONSULTAR" class="boton">
+    </form>
      <div class = "lista_visita">
         <table>
             <thead>
@@ -47,7 +48,27 @@ $query = mysqli_query($conexion, $sql);
                 </tr>
             </thead>
             <tbody>
-                 <?php while($row = mysqli_fetch_array($query)): ?>   
+                 <?php 
+                 
+                 if(!empty($_POST['enviar'])) {
+                    if (empty($_POST['busqueda'])){
+                        echo'<script>
+                        alert("NO SE ENCONTRO UNA TABLA CON ESAS ESPECIFICACIONES");
+                        window.location = "monitor_visita.php"; 
+                            </script>';
+
+                    }else {
+
+                        $busqueda = $_POST['busqueda'];
+
+                        $query_busqueda = "SELECT * FROM visitas WHERE tabla LIKE '%$busqueda%'";
+    
+                        $query = mysqli_query($conexion, $query_busqueda);
+    
+                        while($row = mysqli_fetch_array($query)):
+
+                   
+                ?>       
                 <tr>
                 <th><?= $row["nombre"]?></th>
                     <th><?= $row["apellido"]?></th>
@@ -59,7 +80,7 @@ $query = mysqli_query($conexion, $sql);
                     <th><a class = "boton" href="db/eliminar.php?id=<?= $row['id'] ?>">ELIMINAR</a></th>
                     <th><a class = "boton" href="db/finalizar.php?id=<?= $row['id'] ?>">FINALIZAR</a></th>
                 </tr>
-                <?php endwhile; ?>
+                <?php endwhile; }}?>
             </tbody>
         </table>
     </div>

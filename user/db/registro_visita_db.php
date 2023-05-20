@@ -14,7 +14,7 @@
             $cedula = $_POST['cedula'];  
             $q_visita = $_POST['q_visita'];  
             $tabla = $_POST['tabla']; 
-
+      
             $mysqli_query_createtable = "INSERT INTO visitas (nombre, apellido, cedula, tabla, quien_visita) VALUES ('$nombre', '$apellido', '$cedula', '$tabla', '$q_visita')";
         };
 

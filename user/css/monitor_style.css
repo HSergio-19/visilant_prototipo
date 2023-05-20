@@ -4,11 +4,19 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
 
+
 .titulo_lista {
     text-align: center;
     margin-top: 20px;
 }
 
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
 
 .lista_visita {
     display: flex;
@@ -41,4 +49,14 @@ th {
 .boton:hover {
     transition: all 300ms ease;
     color: #8adcff;;
+}
+
+.ayuda {
+    margin: 20px
+}
+
+.campo {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
 }
