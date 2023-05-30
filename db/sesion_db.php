@@ -1,13 +1,14 @@
 <!--FUNCION DE INICIO DE SESION DE USUARIO EN LA PAGINA-->
 <?php
-session_start();
 require "conexion.php";
+
+session_start();
+
 
 $correo = $_POST['correo'];
 $contrasena = $_POST['contrasena'];
 
-
-
+$_SESSION['correo'] = $correo;
 
 $consulta = "SELECT * FROM user WHERE correo = '$correo' and contrasena = '$contrasena'";
 $resultado = mysqli_query($conexion, $consulta);

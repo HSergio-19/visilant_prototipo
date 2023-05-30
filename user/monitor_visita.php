@@ -12,6 +12,7 @@ require "../db/conexion.php";
 	<link rel="website icon" type="png" href="../img/icon.png">
     <link rel="stylesheet" href="css/header_style.css">
     <link rel="stylesheet" href="css/monitor_style.css">
+    <link rel="stylesheet" href="css/boton_modal.css">
     <title>Visilant</title>
 </head>
 
@@ -27,6 +28,30 @@ require "../db/conexion.php";
 
 
 </header>
+
+<div class = "boton-modal">
+
+    <label for="btn-modal">
+        AYUDA
+    </label>
+
+</div>
+
+<input type="checkbox" id="btn-modal">
+
+<div class = "container-modal">
+    <div class = "content-modal">
+        <h2>GUIA DE AYUDA</h2>
+        <p>Debes ingresar el nombre de tu urbanizacion en el campo vacio para poder gestionar sus visitas. Luego presionas consultar y listo.</p>
+
+        <div class="btn-cerrar">
+            <label for="btn-modal">
+                Cerrar
+            </label>
+        </div>
+    </div>
+    <label for="btn-modal" class="cerrar-modal"></label>
+</div>
 
 <body>
     <h2 class = "titulo_lista">MODIFICAR VISITAS</h2>

@@ -40,6 +40,7 @@
         <div class = "seccion_1">
             <input type="hidden" name="id" value="<?= $row['id']?>">
             <p class="titulo">NOMBRE <input type="text" name="nombre" placeholder = "Nombre" value="<?= $row['nombre']?>"></p>
+            
             <p class="titulo">APELLIDO <input type="text" name="apellido" placeholder = "Apellido" value="<?= $row['apellido']?>"></p>
             
             <p class="titulo">CEDULA <input type="text" name="cedula" placeholder = "Cedula" value="<?= $row['cedula']?>"></p>

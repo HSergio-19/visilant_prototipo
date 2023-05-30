@@ -18,7 +18,7 @@
 
     <div class = "titulo-descripcion">
         <h1>INICIA SESION</h1>
-        <h4>MAnten el orden de tus visitas y visualiza su control en tiempo real</h4>
+        <h4>Manten el orden de tus visitas y visualiza su control en tiempo real</h4>
     </div>
 
     <!--FORMULARIO DE REGISTRO-->
